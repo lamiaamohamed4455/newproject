@@ -30,3 +30,16 @@ for (let word in frequency){
 console.log("عدد الكلمات:",wordcount);
 console.log("عدد الحروف بدون مسافات:",charcount);
 console.log("اكثر كلمة تكرارا:",maxword);
+
+////////////////
+let nums=[5,6,5,2,4,6,9,8,1];
+let uniquenums=[new Set(nums)];//ازالة التكرار
+uniquenums.sort((a,b)=>a-b);//تصاعدي
+let sum=uniquenums.reduce((total,num)=>total+num,0);//حساب المجموع
+console.log("المصفوفة قبل ازالة اتكرار و الترتيب",uniquenums);
+console.log("sum=",sum);
+//////////////////
+let arr=[[1,2],[3,4],[5,6],[7,8]];
+let newarr=arr.flat();
+console.log(newarr);
+
